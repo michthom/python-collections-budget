@@ -44,7 +44,7 @@ expenses.read_expenses('data/spending_data.csv')
     divided_expenses_sum = []
 
     for category_exps in divided_set_comp:
-        divided_expenses_sum.append([x.amount for x in category_exps].sum())
+        divided_expenses_sum.append(sum([x.amount for x in category_exps]))
 
     values = [myBudgetList.sum_expenses, myBudgetList.sum_overages, myBudgetList.budget]
 
