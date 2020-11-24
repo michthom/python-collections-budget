@@ -46,8 +46,6 @@ expenses.read_expenses('data/spending_data.csv')
     for category_exps in divided_set_comp:
         divided_expenses_sum.append(sum([x.amount for x in category_exps]))
 
-    values = [myBudgetList.sum_expenses, myBudgetList.sum_overages, myBudgetList.budget]
-
     ax.pie(divided_expenses_sum, labels=labels, autopct='%1.1f%%')
 
     plt.show()
